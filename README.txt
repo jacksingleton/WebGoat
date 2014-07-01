@@ -194,3 +194,12 @@ Ubuntu:
     - see the FAQ for directions 
 6. Start the tomcat server (default is usually port 8080)
 7. Browse to http://localhost:8080/WebGoat/attack
+
+------------------------------------------------------------------
+Option 6: Using Vagrant
+------------------------------------------------------------------
+
+1. $ vagrant up
+2. $ vagrant ssh -c 'cd /vagrant && mvn tomcat:run-war-only'
+3. browse to http://localhost:8080/WebGoat/attack
+4. login with guest/guest
